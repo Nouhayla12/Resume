@@ -1,0 +1,282 @@
+:root {
+    --primary-color: #4CAF50; /* Couleur principale (vert) */
+    --secondary-color: #333; /* Couleur secondaire */
+    --background-color: #f4f4f4; /* Fond de page */
+    --card-background: #fff; /* Fond des cartes */
+    --text-color: #333; /* Couleur du texte */
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-background);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    flex: 1;
+    text-align: center;
+}
+
+.header-right {
+    flex: 2;
+    text-align: left;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+.subtitle {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.contact-info {
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: white;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links i {
+    margin-right: 10px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right {
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .contact-info p {
+        font-size: 0.8em;
+    }
+
+    .social-links p {
+        font-size: 0.8em;
+    }
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--card-background);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.section h2 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.section h2 i {
+    margin-right: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+
+.skill-card {
+    background: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.language-bars .language {
+    margin-bottom: 10px;
+}
+
+.language-bars .bar {
+    background: var(--background-color);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.language-bars .level {
+    background: var(--primary-color);
+    height: 100%;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.timeline-item .date {
+    font-style: italic;
+    color: #777;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.techniques {
+    font-style: italic;
+    color: #555;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 10px;
+    }
+}
