@@ -275,22 +275,4 @@ ul li {
         flex-direction: column;
         text-align: center;
     }
-@media print {
-    body {
-        background: none !important; /* Supprimer l'arrière-plan */
-        color: black !important; /* Forcer le texte en noir */
-    }
-    a {
-        color: black !important; /* Forcer les liens en noir */
-        text-decoration: none !important; /* Supprimer le soulignement des liens */
-    }
-    /* Masquer les éléments inutiles */
-    .no-print {
-        display: none !important;
-    }
-}
 
-    .profile-image {
-        margin-bottom: 10px;
-    }
-}
