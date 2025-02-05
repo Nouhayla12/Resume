@@ -7,52 +7,16 @@
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
 }
 
-/* styles.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color: var(--background-color);
+    line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
-.language-selection {
-    max-width: 500px;
-    margin: 100px auto;
-    background: var(--card-background);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-    color: var(--primary-color);
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btn {
-    text-decoration: none;
-    color: white;
-    background: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #388E3C;
-}
-
-
+/* Container for the Resume */
 .cv-container {
     max-width: 800px;
     margin: 0 auto;
@@ -62,6 +26,7 @@ h1 {
     border-radius: 10px;
 }
 
+/* Header Styles */
 header {
     background: var(--primary-color);
     color: white;
@@ -109,6 +74,7 @@ header h1 {
     color: white;
 }
 
+/* Contact and Social Links */
 .contact-info {
     margin: 10px 0;
 }
@@ -154,37 +120,7 @@ header h1 {
     color: white;
 }
 
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-right {
-        text-align: center;
-    }
-
-    .profile-image {
-        margin-bottom: 15px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .subtitle {
-        font-size: 1em;
-    }
-
-    .contact-info p {
-        font-size: 0.8em;
-    }
-
-    .social-links p {
-        font-size: 0.8em;
-    }
-}
-
+/* Sections Styling */
 .section {
     margin-bottom: 20px;
     padding: 15px;
@@ -203,12 +139,14 @@ header h1 {
     margin-right: 10px;
 }
 
+/* Responsive Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+/* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -227,6 +165,7 @@ header h1 {
     color: var(--primary-color);
 }
 
+/* Language Proficiency Bars */
 .language-bars .language {
     margin-bottom: 10px;
 }
@@ -243,6 +182,7 @@ header h1 {
     height: 100%;
 }
 
+/* Timeline Styling */
 .timeline {
     position: relative;
     padding-left: 20px;
@@ -285,6 +225,7 @@ header h1 {
     color: #777;
 }
 
+/* Lists */
 ul {
     padding-left: 20px;
 }
@@ -299,13 +240,10 @@ ul li {
     margin-left: 20px;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
-    }
-
-    header h1 {
-        font-size: 2em;
     }
 
     .header-content {
@@ -313,20 +251,60 @@ ul li {
         text-align: center;
     }
 
-.language-switcher {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    .header-right {
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .contact-info p,
+    .social-links p {
+        font-size: 0.8em;
+    }
 }
 
-.language-option {
+/* Language Selection Page */
+.language-selection {
+    max-width: 500px;
+    margin: 100px auto;
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.language-selection h1 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.buttons {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
     text-decoration: none;
-    color: #333;
+    color: white;
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
     font-weight: bold;
 }
 
-.language-option img {
-    margin-right: 5px;
+.btn:hover {
+    background: #388E3C;
 }
