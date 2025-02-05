@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #66BB6A; /* Lighter green */
-    --accent-color: #81C784; /* Soft green */
-    --background-gradient: linear-gradient(135deg, #66BB6A, #81C784); /* Green gradient */
+    --primary-color: #2F6B44; /* Dark green */
+    --accent-color: #4CAF50; /* Lighter green */
+    --background-gradient: linear-gradient(135deg, #2F6B44, #4CAF50); /* Green gradient */
     --text-color: #FFFFFF; /* White */
-    --btn-bg: #F9F9F9; /* Lighter button background */
+    --btn-bg: #F3F4F6; /* Button background */
     --btn-text: #333; /* Button text color */
-    --btn-hover: #4CAF50; /* Bright green on hover */
-    --shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    --btn-hover: #388E3C; /* Darker green on hover */
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 
 /* Main container */
 .cv-container {
-    background: rgba(255, 255, 255, 0.25); /* Lighter transparency for a brighter feel */
+    background: rgba(255, 255, 255, 0.15); /* Subtle transparency */
     padding: 30px;
     border-radius: 15px;
     box-shadow: var(--shadow);
