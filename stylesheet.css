@@ -1,10 +1,12 @@
 :root {
-    --primary-color: #4CAF50; /* Vert principal */
-    --secondary-color: #333; /* Couleur secondaire */
-    --background-gradient: linear-gradient(135deg, #4CAF50, #388E3C); /* Dégradé moderne */
-    --text-color: #fff; /* Texte clair */
-    --btn-hover: #2E7D32; /* Vert foncé au survol */
-    --shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre améliorée */
+    --primary-color: #1E3A8A; /* Bleu foncé */
+    --accent-color: #7B1FA2; /* Violet léger */
+    --background-gradient: linear-gradient(135deg, #1E3A8A, #7B1FA2); /* Dégradé */
+    --text-color: #FFFFFF; /* Blanc */
+    --btn-bg: #F3F4F6; /* Fond des boutons */
+    --btn-text: #333; /* Texte des boutons */
+    --btn-hover: #1E40AF; /* Bleu plus clair */
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Ombre douce */
 }
 
 body {
@@ -23,11 +25,11 @@ body {
 
 /* Conteneur principal */
 .cv-container {
-    background: rgba(255, 255, 255, 0.1); /* Transparence subtile */
+    background: rgba(255, 255, 255, 0.15); /* Transparence subtile */
     padding: 30px;
     border-radius: 15px;
     box-shadow: var(--shadow);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -35,12 +37,12 @@ body {
     transform: scale(1.05);
 }
 
-/* Titre principal */
+/* Titre */
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-weight: bold;
 }
 
@@ -56,8 +58,8 @@ h1 {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    color: white;
-    background: var(--primary-color);
+    color: var(--btn-text);
+    background: var(--btn-bg);
     padding: 15px 30px;
     border-radius: 50px;
     box-shadow: var(--shadow);
@@ -67,24 +69,10 @@ h1 {
     overflow: hidden;
 }
 
-/* Effet d'animation au survol */
-.btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: left 0.3s ease-in-out;
-}
-
-.btn:hover::before {
-    left: 0;
-}
-
+/* Effet de survol */
 .btn:hover {
     background: var(--btn-hover);
+    color: white;
     transform: translateY(-3px);
 }
 
