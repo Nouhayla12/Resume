@@ -3,42 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Nouhayla Mecheboub</title>
+    <title>Select Resume Language</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <!-- Language Selection Buttons -->
-    <div class="language-buttons">
-        <button onclick="changeLanguage('en')">🇬🇧 English</button>
-        <button onclick="changeLanguage('fr')">🇫🇷 Français</button>
+    <div class="language-container">
+        <h1>Choose Your Preferred Language</h1>
+        <div class="language-options">
+            <a href="index_en.html" class="language-btn">
+                <img src="us.png" alt="English Flag"> English
+            </a>
+            <a href="index_fr.html" class="language-btn">
+                <img src="fr.png" alt="French Flag"> Français
+            </a>
+        </div>
     </div>
-
-    <!-- Resume Content -->
-    <div id="resume-content">
-        <h1 data-en="Nouhayla Mecheboub - Resume" data-fr="Nouhayla Mecheboub - CV">Nouhayla Mecheboub - Resume</h1>
-        <p data-en="Marketing & Data Science Enthusiast." data-fr="Passionnée par le Marketing et la Science des Données.">
-            Marketing & Data Science Enthusiast.
-        </p>
-        <h2 data-en="Experience" data-fr="Expérience">Experience</h2>
-        <ul>
-            <li data-en="Worked in e-commerce marketing strategy." data-fr="Travail dans la stratégie marketing e-commerce.">
-                Worked in e-commerce marketing strategy.
-            </li>
-            <li data-en="Research on fear-based prevention campaigns." data-fr="Recherche sur les campagnes de prévention basées sur la peur.">
-                Research on fear-based prevention campaigns.
-            </li>
-        </ul>
-    </div>
-
-    <script>
-        function changeLanguage(lang) {
-            document.querySelectorAll('[data-en]').forEach(element => {
-                element.innerText = element.getAttribute(`data-${lang}`);
-            });
-        }
-    </script>
-
 </body>
 </html>
