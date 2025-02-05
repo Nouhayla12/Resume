@@ -7,14 +7,51 @@
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
 }
 
+/* styles.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
+    text-align: center;
     background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
     color: var(--text-color);
 }
+
+.language-selection {
+    max-width: 500px;
+    margin: 100px auto;
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #388E3C;
+}
+
 
 .cv-container {
     max-width: 800px;
