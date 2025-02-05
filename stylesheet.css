@@ -7,6 +7,8 @@
     --btn-text: #333; /* Button text color */
     --btn-hover: #388E3C; /* Darker green on hover */
     --shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    --us-flag: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg');
+    --fr-flag: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg');
 }
 
 body {
@@ -21,6 +23,7 @@ body {
     background: var(--background-gradient);
     color: var(--text-color);
     animation: fadeIn 1s ease-in-out;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
 }
 
 /* Main container */
@@ -74,6 +77,23 @@ h1 {
     background: var(--btn-hover);
     color: white;
     transform: translateY(-3px);
+}
+
+/* Hover effects for buttons to change background of body */
+.english:hover {
+    background-image: var(--us-flag); /* Set the US flag */
+    background-size: cover;
+    background-position: center;
+    color: transparent; /* Hide text to let the flag show */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
+}
+
+.french:hover {
+    background-image: var(--fr-flag); /* Set the France flag */
+    background-size: cover;
+    background-position: center;
+    color: transparent; /* Hide text to let the flag show */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
 }
 
 /* Background animation */
