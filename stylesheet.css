@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #1E3A8A; /* Bleu foncé */
-    --accent-color: #7B1FA2; /* Violet léger */
-    --background-gradient: linear-gradient(135deg, #1E3A8A, #7B1FA2); /* Dégradé */
-    --text-color: #FFFFFF; /* Blanc */
-    --btn-bg: #F3F4F6; /* Fond des boutons */
-    --btn-text: #333; /* Texte des boutons */
-    --btn-hover: #1E40AF; /* Bleu plus clair */
-    --shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    --primary-color: #2F6B44; /* Dark green */
+    --accent-color: #4CAF50; /* Lighter green */
+    --background-gradient: linear-gradient(135deg, #2F6B44, #4CAF50); /* Green gradient */
+    --text-color: #FFFFFF; /* White */
+    --btn-bg: #F3F4F6; /* Button background */
+    --btn-text: #333; /* Button text color */
+    --btn-hover: #388E3C; /* Darker green on hover */
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 body {
@@ -23,9 +23,9 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Conteneur principal */
+/* Main container */
 .cv-container {
-    background: rgba(255, 255, 255, 0.15); /* Transparence subtile */
+    background: rgba(255, 255, 255, 0.15); /* Subtle transparency */
     padding: 30px;
     border-radius: 15px;
     box-shadow: var(--shadow);
@@ -37,7 +37,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Titre */
+/* Title */
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -46,7 +46,7 @@ h1 {
     font-weight: bold;
 }
 
-/* Boutons */
+/* Buttons */
 .buttons {
     display: flex;
     justify-content: center;
@@ -69,14 +69,14 @@ h1 {
     overflow: hidden;
 }
 
-/* Effet de survol */
+/* Hover effect */
 .btn:hover {
     background: var(--btn-hover);
     color: white;
     transform: translateY(-3px);
 }
 
-/* Animation de fond */
+/* Background animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -88,7 +88,7 @@ h1 {
     }
 }
 
-/* Responsive */
+/* Responsive design */
 @media (max-width: 600px) {
     .cv-container {
         width: 90%;
