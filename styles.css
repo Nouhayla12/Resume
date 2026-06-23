@@ -287,6 +287,22 @@ ul li {
     margin-left: 20px;
 }
 
+.avoid-break,
+.section,
+.timeline-item,
+.skill-card,
+.language,
+li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.section h2,
+.timeline-item h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -325,7 +341,28 @@ ul li {
 }
 
 @media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+
     .no-pdf {
         display: none;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    .avoid-break,
+    .section,
+    .timeline-item,
+    .skill-card,
+    .language,
+    li {
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 }
