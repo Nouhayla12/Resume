@@ -11,7 +11,7 @@
 <body>
     <div class="download-area no-pdf">
         <button type="button" class="download-btn" onclick="downloadCV()">
-            <i class="fas fa-download"></i> Télécharger le CV professionnel
+            <i class="fas fa-download"></i> Télécharger CV
         </button>
     </div>
 
@@ -178,7 +178,7 @@
             const element = document.getElementById('cv-content');
             const options = {
                 margin: [0.15, 0.15, 0.15, 0.15],
-                filename: 'CV_Nouhayla_Mecheboub_Professionnel.pdf',
+                filename: 'CV_Nouhayla_Mecheboub.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2, useCORS: true, letterRendering: true },
                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
