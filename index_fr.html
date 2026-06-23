@@ -6,9 +6,16 @@
     <title>CV - Nouhayla Mecheboub</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
 </head>
 <body>
-    <div class="cv-container">
+    <div class="download-area no-pdf">
+        <button type="button" class="download-btn" onclick="downloadCV()">
+            <i class="fas fa-download"></i> Télécharger le CV en PDF
+        </button>
+    </div>
+
+    <div class="cv-container" id="cv-content">
         <!-- En-tête -->
         <header>
             <div class="header-content">
@@ -29,9 +36,6 @@
                             <a href="https://www.linkedin.com/in/nouhayla-mecheboub-serghini/" target="_blank"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/nouhayla-mecheboub-serghini/</a>
                         </p>
                     </div>
-                    <button type="button" class="download-btn" onclick="window.print()">
-                        <i class="fas fa-download"></i> Télécharger le CV
-                    </button>
                 </div>
             </div>
         </header>
@@ -171,5 +175,20 @@
             </section>
         </div>
     </div>
+
+    <script>
+        function downloadCV() {
+            const element = document.getElementById('cv-content');
+            const options = {
+                margin: 0.25,
+                filename: 'CV_Nouhayla_Mecheboub.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(options).from(element).save();
+        }
+    </script>
 </body>
 </html>
