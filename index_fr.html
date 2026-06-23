@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Nouhayla Mecheboub</title>
+    <title>CV Corporate - Nouhayla Mecheboub</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
@@ -11,181 +11,178 @@
 <body>
     <div class="download-area no-pdf">
         <button type="button" class="download-btn" onclick="downloadCV()">
-            <i class="fas fa-download"></i> Télécharger le CV en PDF
+            <i class="fas fa-download"></i> Télécharger le CV professionnel
         </button>
     </div>
 
-    <div class="cv-container" id="cv-content">
-        <!-- En-tête -->
-        <header>
-            <div class="header-content">
-                <div class="header-left">
-                    <img src="Photo.jpg" alt="Photo de Nouhayla Mecheboub" class="profile-image">
-                </div>
-                <div class="header-right">
-                    <h1>NOUHAYLA MECHEBOUB</h1>
-                    <p class="subtitle"><strong>DATA SCIENTIST & ANALYST</strong></p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +212 606 958 249 |  <i class="fas fa-envelope"></i>  nouhayla.mecheboub@gmail.com</p>
-                    </div>
-                    <div class="social-links">
-                        <p>
-                            <a href="https://nouhaylamecheboub.netlify.app/" target="_blank"><i class="fas fa-globe"></i> https://nouhaylamecheboub.netlify.app/</a>
-                        </p>
-                        <p>
-                            <a href="https://www.linkedin.com/in/nouhayla-mecheboub-serghini/" target="_blank"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/nouhayla-mecheboub-serghini/</a>
-                        </p>
-                    </div>
-                </div>
+    <main class="resume-page" id="cv-content">
+        <aside class="sidebar">
+            <div class="photo-block">
+                <img src="Photo.jpg" alt="Photo de Nouhayla Mecheboub" class="profile-image">
             </div>
-        </header>
 
-        <!-- Profil -->
-        <section class="section profile avoid-break">
-            <h2><i class="fas fa-user"></i> PROFIL</h2>
-            <p>
-                Data Scientist et Data Analyst diplômée d’un Master en Marketing, Revenue Management et Data Science. Je suis spécialisée dans la transformation de jeux de données complexes en insights business actionnables grâce au machine learning, à l’analyse exploratoire et à la visualisation de données. Je travaille actuellement dans la mesure d’audience TV et la recherche média chez CIAUMED, où je combine rigueur analytique et compréhension métier pour appuyer la prise de décision stratégique.
-            </p>
-        </section>
+            <section class="side-section">
+                <h2>Contact</h2>
+                <p><i class="fas fa-phone"></i> +212 606 958 249</p>
+                <p><i class="fas fa-envelope"></i> nouhayla.mecheboub@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</p>
+                <p><i class="fab fa-linkedin"></i> linkedin.com/in/nouhayla-mecheboub-serghini</p>
+                <p><i class="fas fa-globe"></i> nouhaylamecheboub.netlify.app</p>
+            </section>
 
-        <!-- Expérience -->
-        <section class="section experience">
-            <h2><i class="fas fa-briefcase"></i> EXPÉRIENCE</h2>
-            <div class="timeline">
-                <div class="timeline-item avoid-break">
-                    <h3>Audience Measurement Research Analyst – CIAUMED</h3>
-                    <p class="institution">Casablanca, Maroc</p>
-                    <p class="date">Juillet 2025 – Présent</p>
-                    <ul>
-                        <li>Réaliser des audits mensuels, trimestriels et annuels des bases de données afin d’assurer la fiabilité et la cohérence des données de mesure d’audience.</li>
-                        <li>Concevoir des tableaux de bord interactifs avec R Markdown et Power BI pour améliorer la visualisation et l’analyse des données.</li>
-                        <li>Mettre en place des systèmes de suivi et des outils quantitatifs de collecte de données pour renforcer le pilotage opérationnel.</li>
-                        <li>Construire et valider des modèles prédictifs pour optimiser la classification.</li>
-                        <li>Superviser les opérations d’enquêtes terrain et valider les procédures de collecte afin de garantir la qualité méthodologique.</li>
-                    </ul>
-                </div>
+            <section class="side-section">
+                <h2>Compétences clés</h2>
+                <ul class="clean-list">
+                    <li>Data Science</li>
+                    <li>Data Analysis</li>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>NLP & Analyse de sentiment</li>
+                    <li>Mesure d’audience TV</li>
+                    <li>Data Scraping</li>
+                    <li>Visualisation de données</li>
+                </ul>
+            </section>
 
-                <div class="timeline-item avoid-break">
-                    <h3>Data Scientist– CIAUMED</h3>
-                    <p class="institution">Casablanca, Maroc</p>
-                    <p class="institution">Stage PFE</p>
-                    <p class="date">Avril 2025 – Juillet 2025</p>
-                    <ul>
-                        <li><strong>Évaluation des programmes télévisés durant le mois de Ramadan : approche quantitative et qualitative:</strong></li>
-                        <li>Réaliser une analyse quantitative et qualitative des programmes TV marocains diffusés pendant le Ramadan.</li>
-                        <li>Appliquer l’Analyse Exploratoire de Données (EDA) sur des jeux de données d’audience pour identifier les tendances et comportements de visionnage.</li>
-                        <li>Scraper et analyser les commentaires des spectateurs (Darija – dialecte marocain) depuis Facebook et YouTube afin de mener une analyse de sentiment et capter les réactions émotionnelles.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Éducation -->
-        <section class="section education">
-            <h2><i class="fas fa-graduation-cap"></i> PARCOURS ACADÉMIQUE</h2>
-            <div class="timeline">
-                <!-- Master -->
-                <div class="timeline-item avoid-break">
-                    <h3>Master en Marketing, Revenue Management et Data Science</h3>
-                    <p class="institution">Université Mohammed Premier, Oujda</p>
-                    <p class="date">Octobre 2023 - Juillet 2025</p>
-                    <ul>
-                        <li><strong>Projet de fin d’études :</strong> Évaluation des programmes télévisés du Ramadan via une approche duale : quantitative (EDA sur des données d’audience) et qualitative (NLP et analyse de sentiment sur des commentaires en ligne).</li>
-                        <li><strong>Big Data Mining et Visualisation :</strong> Tableau de bord interactif Power BI pour les tendances de consommation télécom, prévisions et KPIs en temps réel.</li>
-                        <li><strong>Marketing Analytics :</strong> Prédiction du churn client dans la banque à l’aide d’ANN et TensorFlow.</li>
-                        <li><strong>Pricing & Revenue Management :</strong> Prédiction des annulations de réservations hôtelières avec SVM, Régression Logistique, XGBoost et Random Forest.</li>
-                        <li><strong>Détection de fraude :</strong> Étude comparative d’architectures de deep learning (MLP, RNN, LSTM).</li>
-                        <li><strong>Réseaux sociaux & Web Analytics :</strong> Application web de détection de discours haineux avec BERT, BerTweet, HateBERT et explicabilité SHAP.</li>
-                    </ul>
-                </div>
-
-                <!-- Licence -->
-                <div class="timeline-item avoid-break">
-                    <h3>Licence fondamentale en Sciences Mathématiques et Informatique</h3>
-                    <p class="institution">Université Mohammed Premier, Oujda</p>
-                    <p class="date">Septembre 2019 - Juin 2022</p>
-                    <ul>
-                        <li><strong>PFE :</strong> Réalisation d’un réseau de neurones multicouches qui joue le rôle d’un compresseur et décompresseur des chiffres manuscrits (Système de reconnaissance des chiffres manuscrits avec DATASET MNIST).</li>
-                        <li class="techniques">Techniques utilisées : Réseaux de neurones, TensorFlow, Keras, Tkinter.</li>
-                    </ul>
-                </div>
-
-                <!-- Formation administrateur informatique -->
-                <div class="timeline-item avoid-break">
-                    <h3>Formation en tant qu'administrateur informatique</h3>
-                    <p class="institution">Institut Gil-Tiknia sous la supervision d’Oxford Academy for Training & Consulting, Berkane</p>
-                    <p class="date">Octobre 2020 - août 2021</p>
-                </div>
-
-                <!-- Baccalauréat -->
-                <div class="timeline-item avoid-break">
-                    <h3>Baccalauréat scientifique - Sciences Mathématiques B</h3>
-                    <p class="institution">Lycée Laymoune, Berkane</p>
-                    <p class="date">Septembre 2016 - Juin 2019</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Compétences et Langues -->
-        <div class="grid-container">
-            <!-- Compétences -->
-            <section class="section skills avoid-break">
-                <h2><i class="fas fa-cogs"></i> COMPÉTENCES</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>DATA SCIENCE & ANALYSE</h3>
-                        <ul>
-                            <li>Machine Learning & Deep Learning</li>
-                            <li>Mesure d’audience TV</li>
-                            <li>Analyse Exploratoire de Données (EDA)</li>
-                            <li>NLP & Analyse de sentiment</li>
-                            <li>Data Scraping</li>
-                            <li>Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch)</li>
-                            <li>R</li>
-                            <li>SQL & Bases de données</li>
-                            <li>Excel</li>
-                            <li>Power BI</li>
-                            <li>IBM SPSS</li>
-                        </ul>
-                    </div>
+            <section class="side-section">
+                <h2>Outils</h2>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>R</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                    <span>TensorFlow</span>
+                    <span>PyTorch</span>
+                    <span>Scikit-learn</span>
+                    <span>IBM SPSS</span>
                 </div>
             </section>
 
-            <!-- Langues -->
-            <section class="section languages avoid-break">
-                <h2><i class="fas fa-globe"></i> LANGUES</h2>
-                <div class="language-bars">
-                    <div class="language">
-                        <span>Arabe</span>
-                        <div class="bar"><div class="level" style="width: 100%;"></div></div>
+            <section class="side-section">
+                <h2>Langues</h2>
+                <p><strong>Arabe</strong> — Langue maternelle</p>
+                <p><strong>Français</strong> — Courant</p>
+                <p><strong>Anglais</strong> — Professionnel</p>
+                <p><strong>Allemand</strong> — Intermédiaire</p>
+            </section>
+        </aside>
+
+        <section class="main-content">
+            <header class="resume-header">
+                <h1>Nouhayla Mecheboub</h1>
+                <p class="headline">Data Scientist & Data Analyst</p>
+            </header>
+
+            <section class="content-section avoid-break">
+                <h2>Profil professionnel</h2>
+                <p>
+                    Data Scientist et Data Analyst diplômée d’un Master en Marketing, Revenue Management et Data Science. Spécialisée dans l’analyse de données, le machine learning, le NLP et la visualisation de données, avec une expérience concrète dans la mesure d’audience TV et la recherche média. Capable de transformer des données complexes en insights exploitables pour soutenir la prise de décision stratégique.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2>Expérience professionnelle</h2>
+
+                <article class="experience-item avoid-break">
+                    <div class="item-header">
+                        <h3>Audience Measurement Research Analyst</h3>
+                        <span>Juillet 2025 – Présent</span>
                     </div>
-                    <div class="language">
-                        <span>Français</span>
-                        <div class="bar"><div class="level" style="width: 80%;"></div></div>
+                    <p class="company">CIAUMED — Casablanca, Maroc</p>
+                    <ul>
+                        <li>Réalisation d’audits mensuels, trimestriels et annuels afin d’assurer la fiabilité des bases de données d’audience.</li>
+                        <li>Conception de tableaux de bord interactifs avec Power BI et R Markdown pour améliorer l’analyse et la visualisation des données.</li>
+                        <li>Mise en place d’outils de suivi et de collecte de données pour renforcer le pilotage opérationnel.</li>
+                        <li>Construction et validation de modèles prédictifs pour optimiser la classification et l’exploitation des données.</li>
+                        <li>Supervision des opérations terrain et validation des procédures de collecte pour garantir la qualité méthodologique.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item avoid-break">
+                    <div class="item-header">
+                        <h3>Data Scientist — Stage PFE</h3>
+                        <span>Avril 2025 – Juillet 2025</span>
                     </div>
-                    <div class="language">
-                        <span>Anglais</span>
-                        <div class="bar"><div class="level" style="width: 80%;"></div></div>
+                    <p class="company">CIAUMED — Casablanca, Maroc</p>
+                    <p class="project-title">Projet : Évaluation des programmes télévisés du Ramadan par approche quantitative et qualitative</p>
+                    <ul>
+                        <li>Analyse exploratoire des données d’audience TV afin d’identifier les tendances de visionnage.</li>
+                        <li>Scraping et traitement de commentaires issus de Facebook et YouTube.</li>
+                        <li>Analyse de sentiment sur des commentaires en Darija pour capter les réactions émotionnelles des téléspectateurs.</li>
+                        <li>Synthèse des résultats pour appuyer l’évaluation des performances des programmes TV.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="content-section">
+                <h2>Formation</h2>
+
+                <article class="education-item avoid-break">
+                    <div class="item-header">
+                        <h3>Master en Marketing, Revenue Management et Data Science</h3>
+                        <span>2023 – 2025</span>
                     </div>
-                    <div class="language">
-                        <span>Allemand</span>
-                        <div class="bar"><div class="level" style="width: 40%;"></div></div>
+                    <p class="company">Université Mohammed Premier — Oujda</p>
+                    <p>
+                        Projets : NLP et analyse de sentiment, churn client avec ANN/TensorFlow, prédiction d’annulations hôtelières avec XGBoost, Random Forest et SVM, détection de fraude par Deep Learning, hate speech detection avec BERT et SHAP.
+                    </p>
+                </article>
+
+                <article class="education-item avoid-break">
+                    <div class="item-header">
+                        <h3>Licence fondamentale en Sciences Mathématiques et Informatique</h3>
+                        <span>2019 – 2022</span>
+                    </div>
+                    <p class="company">Université Mohammed Premier — Oujda</p>
+                    <p>
+                        Projet de fin d’études : système de compression et décompression d’images basé sur les réseaux de neurones avec le dataset MNIST.
+                    </p>
+                </article>
+
+                <article class="education-item avoid-break compact-item">
+                    <div class="item-header">
+                        <h3>Formation Administrateur Informatique</h3>
+                        <span>2020 – 2021</span>
+                    </div>
+                    <p class="company">Institut Gil-Tiknia / Oxford Academy — Berkane</p>
+                </article>
+            </section>
+
+            <section class="content-section avoid-break">
+                <h2>Projets & domaines d’expertise</h2>
+                <div class="expertise-grid">
+                    <div>
+                        <h3>Business Analytics</h3>
+                        <p>Tableaux de bord, KPIs, analyse exploratoire, reporting décisionnel.</p>
+                    </div>
+                    <div>
+                        <h3>Machine Learning</h3>
+                        <p>Classification, prédiction, modèles supervisés, évaluation de performance.</p>
+                    </div>
+                    <div>
+                        <h3>NLP</h3>
+                        <p>Analyse de sentiment, scraping, traitement de texte, BERT et HateBERT.</p>
+                    </div>
+                    <div>
+                        <h3>Recherche média</h3>
+                        <p>Mesure d’audience TV, analyse comportementale, validation de données terrain.</p>
                     </div>
                 </div>
             </section>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script>
         function downloadCV() {
             const element = document.getElementById('cv-content');
             const options = {
-                margin: [0.25, 0.25, 0.25, 0.25],
-                filename: 'CV_Nouhayla_Mecheboub.pdf',
+                margin: [0.15, 0.15, 0.15, 0.15],
+                filename: 'CV_Nouhayla_Mecheboub_Professionnel.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 2, useCORS: true, letterRendering: true },
                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
-                pagebreak: { mode: ['css', 'legacy'], avoid: ['.avoid-break', '.section', '.timeline-item', 'li'] }
+                pagebreak: { mode: ['css', 'legacy'], avoid: ['.avoid-break', '.experience-item', '.education-item', '.side-section'] }
             };
 
             html2pdf().set(options).from(element).save();
