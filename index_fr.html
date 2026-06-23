@@ -41,7 +41,7 @@
         </header>
 
         <!-- Profil -->
-        <section class="section profile">
+        <section class="section profile avoid-break">
             <h2><i class="fas fa-user"></i> PROFIL</h2>
             <p>
                 Data Scientist et Data Analyst diplômée d’un Master en Marketing, Revenue Management et Data Science. Je suis spécialisée dans la transformation de jeux de données complexes en insights business actionnables grâce au machine learning, à l’analyse exploratoire et à la visualisation de données. Je travaille actuellement dans la mesure d’audience TV et la recherche média chez CIAUMED, où je combine rigueur analytique et compréhension métier pour appuyer la prise de décision stratégique.
@@ -52,7 +52,7 @@
         <section class="section experience">
             <h2><i class="fas fa-briefcase"></i> EXPÉRIENCE</h2>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item avoid-break">
                     <h3>Audience Measurement Research Analyst – CIAUMED</h3>
                     <p class="institution">Casablanca, Maroc</p>
                     <p class="date">Juillet 2025 – Présent</p>
@@ -65,7 +65,7 @@
                     </ul>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item avoid-break">
                     <h3>Data Scientist– CIAUMED</h3>
                     <p class="institution">Casablanca, Maroc</p>
                     <p class="institution">Stage PFE</p>
@@ -85,7 +85,7 @@
             <h2><i class="fas fa-graduation-cap"></i> PARCOURS ACADÉMIQUE</h2>
             <div class="timeline">
                 <!-- Master -->
-                <div class="timeline-item">
+                <div class="timeline-item avoid-break">
                     <h3>Master en Marketing, Revenue Management et Data Science</h3>
                     <p class="institution">Université Mohammed Premier, Oujda</p>
                     <p class="date">Octobre 2023 - Juillet 2025</p>
@@ -100,7 +100,7 @@
                 </div>
 
                 <!-- Licence -->
-                <div class="timeline-item">
+                <div class="timeline-item avoid-break">
                     <h3>Licence fondamentale en Sciences Mathématiques et Informatique</h3>
                     <p class="institution">Université Mohammed Premier, Oujda</p>
                     <p class="date">Septembre 2019 - Juin 2022</p>
@@ -111,14 +111,14 @@
                 </div>
 
                 <!-- Formation administrateur informatique -->
-                <div class="timeline-item">
+                <div class="timeline-item avoid-break">
                     <h3>Formation en tant qu'administrateur informatique</h3>
                     <p class="institution">Institut Gil-Tiknia sous la supervision d’Oxford Academy for Training & Consulting, Berkane</p>
                     <p class="date">Octobre 2020 - août 2021</p>
                 </div>
 
                 <!-- Baccalauréat -->
-                <div class="timeline-item">
+                <div class="timeline-item avoid-break">
                     <h3>Baccalauréat scientifique - Sciences Mathématiques B</h3>
                     <p class="institution">Lycée Laymoune, Berkane</p>
                     <p class="date">Septembre 2016 - Juin 2019</p>
@@ -129,7 +129,7 @@
         <!-- Compétences et Langues -->
         <div class="grid-container">
             <!-- Compétences -->
-            <section class="section skills">
+            <section class="section skills avoid-break">
                 <h2><i class="fas fa-cogs"></i> COMPÉTENCES</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
@@ -152,7 +152,7 @@
             </section>
 
             <!-- Langues -->
-            <section class="section languages">
+            <section class="section languages avoid-break">
                 <h2><i class="fas fa-globe"></i> LANGUES</h2>
                 <div class="language-bars">
                     <div class="language">
@@ -180,11 +180,12 @@
         function downloadCV() {
             const element = document.getElementById('cv-content');
             const options = {
-                margin: 0.25,
+                margin: [0.25, 0.25, 0.25, 0.25],
                 filename: 'CV_Nouhayla_Mecheboub.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+                html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+                pagebreak: { mode: ['css', 'legacy'], avoid: ['.avoid-break', '.section', '.timeline-item', 'li'] }
             };
 
             html2pdf().set(options).from(element).save();
