@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Language Selection</title>
+    <title>Nouhayla Resume | Choose Your Language</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="loader"></div>
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="background-orb orb-three"></div>
 
-    <div class="cv-container language-selection">
-        <h1>Select Resume Language</h1>
-        <div class="buttons">
-            <a href="index_en.html" class="btn english">English</a>
-            <a href="index_fr.html" class="btn french">Français</a>
+    <main class="landing-card" aria-label="Resume language selection">
+        <p class="eyebrow">Welcome to my interactive resume</p>
+        <h1>Choose your resume experience</h1>
+        <p class="intro">
+            Discover my profile, skills, and professional journey in the language you prefer.
+        </p>
+
+        <div class="buttons" aria-label="Language options">
+            <a href="index_en.html" class="language-card english" aria-label="Open English resume">
+                <span class="flag">🇺🇸</span>
+                <span>
+                    <strong>English</strong>
+                    <small>Explore my resume</small>
+                </span>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="index_fr.html" class="language-card french" aria-label="Open French resume">
+                <span class="flag">🇫🇷</span>
+                <span>
+                    <strong>Français</strong>
+                    <small>Découvrir mon CV</small>
+                </span>
+                <span class="arrow">→</span>
+            </a>
         </div>
-    </div>
+    </main>
 </body>
 </html>
