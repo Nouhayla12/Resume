@@ -99,6 +99,23 @@ body {
     overflow-wrap: anywhere;
 }
 
+.side-section p:has(i) {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+}
+
+.side-section p:has(i) i {
+    flex: 0 0 16px;
+    width: 16px;
+    min-width: 16px;
+    color: #9fb3c8;
+    margin-right: 0;
+    margin-top: 2px;
+    text-align: center;
+}
+
 .side-section i {
     width: 16px;
     color: #9fb3c8;
