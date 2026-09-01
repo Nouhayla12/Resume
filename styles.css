@@ -155,6 +155,65 @@ body {
     color: #f0f4f8;
 }
 
+.side-expertise {
+    margin-bottom: 0;
+}
+
+.sidebar:has(.side-expertise) {
+    padding: 22px 18px;
+}
+
+.sidebar:has(.side-expertise) .photo-block {
+    margin-bottom: 18px;
+}
+
+.sidebar:has(.side-expertise) .profile-image {
+    width: 104px;
+    height: 104px;
+}
+
+.sidebar:has(.side-expertise) .side-section {
+    margin-bottom: 16px;
+}
+
+.sidebar:has(.side-expertise) .side-expertise {
+    margin-bottom: 0;
+}
+
+.sidebar:has(.side-expertise) .side-section h2 {
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+}
+
+.sidebar:has(.side-expertise) .side-section p,
+.sidebar:has(.side-expertise) .side-section li {
+    margin-bottom: 5px;
+}
+
+.side-expertise-list {
+    display: grid;
+    gap: 8px;
+}
+
+.side-expertise-list div {
+    padding-left: 8px;
+    border-left: 2px solid #9fb3c8;
+}
+
+.side-expertise-list h3 {
+    margin: 0 0 2px 0;
+    color: var(--white);
+    font-size: 11.5px;
+    line-height: 1.2;
+}
+
+.side-expertise-list p {
+    margin: 0;
+    color: #d9e2ec;
+    font-size: 10.5px;
+    line-height: 1.25;
+}
+
 .main-content {
     padding: 30px 34px;
 }
