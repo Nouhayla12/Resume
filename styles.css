@@ -77,8 +77,6 @@ body {
 
 .side-section {
     margin-bottom: 24px;
-    break-inside: avoid;
-    page-break-inside: avoid;
 }
 
 .side-section h2 {
@@ -353,8 +351,6 @@ li {
 }
 
 .avoid-break,
-.side-section,
-.content-section,
 .experience-item,
 .education-item,
 .expertise-grid div {
@@ -416,10 +412,9 @@ li {
     }
 
     .avoid-break,
-    .side-section,
-    .content-section,
     .experience-item,
     .education-item,
+    .side-expertise-list div,
     li {
         break-inside: avoid;
         page-break-inside: avoid;
